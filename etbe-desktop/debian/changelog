@@ -1,3 +1,9 @@
+etbe-desktop (0.4.3) bookworm; urgency=medium
+
+  * kitty support
+
+ -- Russell Coker <russell@coker.com.au>  Fri, 27 Oct 2023 20:18:08 +1100
+
 etbe-desktop (0.4.2) bookworm; urgency=medium
 
   * Fix location of key files in previous package
