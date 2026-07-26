@@ -1,3 +1,9 @@
+etbe-base (0.3.2) bullseye; urgency=medium
+
+  * Don't depend on execstack because it has gone away
+
+ -- Russell Coker <russell@coker.com.au>  Sun, 18 Jul 2021 04:50:03 +1000
+
 etbe-base (0.3.1) bullseye; urgency=medium
 
   * Add purge-removed
