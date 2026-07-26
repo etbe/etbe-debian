@@ -3,7 +3,7 @@
 set -e
 
 for N in $(ls -1 /usr/local/sbin/kvm-*| sort -r) ; do
-  start-a-kvm $N
+  /usr/sbin/start-a-kvm $N
   echo $N
   sleep 10
 done
