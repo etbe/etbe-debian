@@ -1,3 +1,9 @@
+etbe-mon (0.2.4) bullseye; urgency=medium
+
+  * Depend on libhash-case-perl because imapnew.monitor now needs it
+
+ -- Russell Coker <russell@coker.com.au>  Mon, 05 Apr 2021 18:37:00 +1000
+
 etbe-mon (0.2.3) buster; urgency=medium
 
   * add etbemyzones.monitor and etbemyzonesprimary.monitor back in
