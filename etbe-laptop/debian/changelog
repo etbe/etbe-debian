@@ -1,3 +1,9 @@
+etbe-laptop (0.2) bookworm; urgency=medium
+
+  * Depend on kde-config-mobile-networking
+
+ -- Russell Coker <russell@coker.com.au>  Wed, 25 Dec 2024 14:31:48 +1100
+
 etbe-laptop (0.1) unstable; urgency=medium
 
   * Initial release
