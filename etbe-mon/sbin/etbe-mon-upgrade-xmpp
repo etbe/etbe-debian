@@ -7,3 +7,4 @@ P=$(cut -f2 -d\  .sendxmpprc)
 echo "username: $U" > .config/go-sendxmpp/config
 echo "password: $P" >> .config/go-sendxmpp/config
 chmod 600 .config/go-sendxmpp/config
+chown -R $1 .config

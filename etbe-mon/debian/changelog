@@ -1,3 +1,9 @@
+etbe-mon (0.2.7) bookworm; urgency=medium
+
+  * Auto upgrade of xmpp config
+
+ -- Russell Coker <russell@coker.com.au>  Sun, 26 Mar 2023 16:12:49 +1100
+
 etbe-mon (0.2.6) bookworm; urgency=medium
 
   * Added etbe-mon-upgrade-xmpp script to use go-sendxmpp
