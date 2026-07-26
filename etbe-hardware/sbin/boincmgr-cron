@@ -10,7 +10,7 @@ use Sys::Syslog;
 
 my $URL = $ARGV[0];
 
-open(IN, "wget -o /dev/null -O - $URL|") or die "Can't get $URL";
+open(IN, "/usr/bin/curl -s -S -o - $URL|") or die "Can't get $URL";
 while(<IN>)
 {
   if($_ =~ /tr class=.rowleftcolumn/)
@@ -38,6 +38,7 @@ while(<IN>)
   chomp;
   if($_ =~ /^<.tr>$/)
   {
+    while(<IN>) {}
     last;
   }
   my $res;

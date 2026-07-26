@@ -1,3 +1,9 @@
+etbe-hardware (0.2.2) bullseye; urgency=medium
+
+  * Make boincmgr-cron use curl instead of wget because BOM has blacklisted wget
+
+ -- Russell Coker <russell@coker.com.au>  Sat, 27 Mar 2021 20:56:04 +1100
+
 etbe-hardware (0.2.1) bullseye; urgency=medium
 
   * Add btrfs-make-snapshot and btrfs-remove-snapshots scripts
