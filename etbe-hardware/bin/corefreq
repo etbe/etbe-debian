@@ -1,0 +1,6 @@
+#!/bin/bash
+set -e
+
+for f in /sys/devices/system/cpu/cpu*/cpufreq/scaling_cur_freq; do
+  printf "%s MHz\n" "$(( $(cat $f) / 1000 ))"
+done

@@ -1,3 +1,9 @@
+etbe-hardware (0.2.4) trixie; urgency=medium
+
+  * Add corefreq command to display CPU frequencies
+
+ -- Russell Coker <russell@coker.com.au>  Tue, 16 Dec 2025 11:27:56 +1100
+
 etbe-hardware (0.2.3) trixie; urgency=medium
 
   * Depend on lsscsi, pwgen
