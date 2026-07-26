@@ -1,4 +1,10 @@
-etbe-hardware (0.1-5) UNRELEASED; urgency=medium
+etbe-hardware (0.2.1) bullseye; urgency=medium
+
+  * Add btrfs-make-snapshot and btrfs-remove-snapshots scripts
+
+ -- Russell Coker <russell@coker.com.au>  Thu, 11 Mar 2021 14:00:46 +1100
+
+etbe-hardware (0.1-5) buster; urgency=medium
 
   * Add dmidecode and spectre-meltdown-checker to depends
   * Add script rename-int

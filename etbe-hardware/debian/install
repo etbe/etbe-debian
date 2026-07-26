@@ -1,1 +1,1 @@
-sbin/boincmgr-cron /usr/sbin
+sbin/* /usr/sbin

@@ -1,0 +1,41 @@
+#!/bin/bash
+set -e
+
+# usage:
+# btrfs-remove-snapshots [-d] MINSNAPS DAYSNAPS paths
+# example:
+# btrfs-remove-snapshots 100 100 /home /mail
+
+BTRFS=/bin/btrfs
+while [ "$1" == "-d" -o "$1" == "-m" ]; do
+  if [ "$1" == "-d" ]; then
+    BTRFS="echo btrfs"
+    shift
+  fi
+  if [ "$1" == "-m" ]; then
+    shift
+    MOUNTPOINT="$1"
+    shift
+  fi
+done
+
+MINSNAPS=$1
+shift
+DAYSNAPS=$1
+shift
+
+for DIR in $* ; do
+  BASENAME=$(basename $DIR)
+  if [ "$BASENAME" == "/" ]; then
+    BACKUPDIR="backup"
+  else
+    BACKUPDIR="backup-$BASENAME"
+  fi
+
+  for n in $(/bin/btrfs subvol list $MOUNTPOINT/|grep \ ${BACKUPDIR}/.*:|head -n -$MINSNAPS|sed -e "s/^.* //"); do
+    $BTRFS subvol delete $MOUNTPOINT/$n
+  done
+  for n in $(/bin/btrfs subvol list $MOUNTPOINT/|grep \ ${BACKUPDIR}/|grep -v :|head -n -$DAYSNAPS|sed -e "s/^.* //"); do
+    $BTRFS subvol delete $MOUNTPOINT/$n
+  done
+done

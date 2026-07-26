@@ -1,0 +1,40 @@
+#!/bin/bash
+set -e
+
+# usage:
+# btrfs-make-snapshot [-m mountpoint] [-d] minutes|days paths
+# example:
+# btrfs-make-snapshot minutes /home /mail
+
+BTRFS=/bin/btrfs
+while [ "$1" == "-d" -o "$1" == "-m" ]; do
+  if [ "$1" == "-d" ]; then
+    BTRFS="echo btrfs"
+    shift
+  fi
+  if [ "$1" == "-m" ]; then
+    shift
+    MOUNTPOINT="$1"
+    shift
+  fi
+done
+
+if [ "$1" == "minutes" ]; then
+  DATE=$(date +%Y-%m-%d:%H:%M)
+else
+  DATE=$(date +%Y-%m-%d)
+fi
+shift
+
+
+for n in $* ; do
+  BASENAME=$(basename $n)
+  if [ "$BASENAME" == "/" ]; then
+    BACKUPDIR="$MOUNTPOINT/backup"
+  else
+    BACKUPDIR="$MOUNTPOINT/backup-$BASENAME"
+  fi
+  if [ ! -d $BACKUPDIR/$DATE ]; then
+    $BTRFS subvol snapshot -r $n $BACKUPDIR/$DATE
+  fi
+done
