@@ -1,0 +1,11 @@
+Source: etbe-cuda
+Section: admin
+Priority: optional
+Maintainer: Russell Coker <russell@coker.com.au>
+Build-Depends: debhelper-compat (= 13)
+Standards-Version: 3.9.8
+
+Package: etbe-cuda
+Architecture: all
+Depends: nvidia-driver, firmware-misc-nonfree, linux-headers-amd64, nvidia-cuda-dev, nvidia-cuda-toolkit, nvidia-smi, nvidia-vulkan-icd
+Description: Basic dependencies for etbe cuda

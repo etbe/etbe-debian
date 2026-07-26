@@ -1,0 +1,9 @@
+Package: etbe-phone
+Version: 0.4
+Architecture: all
+Maintainer: Russell Coker <russell@coker.com.au>
+Installed-Size: 9
+Depends: etbe-base, wpasupplicant, wireless-tools, network-manager, plasma-mobile-phone, nheko, lollypop, kwalletmanager, waypipe, geary, wike
+Section: admin
+Priority: optional
+Description: Basic dependencies for etbe phone
