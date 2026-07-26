@@ -1,3 +1,10 @@
+etbe-base (0.4) trixie; urgency=medium
+
+  * pre-depends on unattended-upgrades so postinst can change it's config
+  * Depend on debhelper 13
+
+ -- Russell Coker <russell@coker.com.au>  Tue, 15 Apr 2025 15:47:39 +1000
+
 etbe-base (0.3.12) bookworm; urgency=medium
 
   * Depend on gdb | gdb-minimal for trixie
