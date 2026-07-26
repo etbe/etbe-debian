@@ -1,3 +1,9 @@
+etbe-laptop (0.3) trixie; urgency=medium
+
+  * Depend on usb-modeswitch
+
+ -- Russell Coker <russell@coker.com.au>  Fri, 10 Jan 2025 16:13:12 +1100
+
 etbe-laptop (0.2) bookworm; urgency=medium
 
   * Depend on kde-config-mobile-networking
