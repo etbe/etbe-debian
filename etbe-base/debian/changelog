@@ -1,3 +1,9 @@
+etbe-base (0.8) trixie; urgency=medium
+
+  * Depend on wtmpdb
+
+ -- Russell Coker <russell@coker.com.au>  Sun, 31 Aug 2025 19:23:13 +1000
+
 etbe-base (0.7) trixie; urgency=medium
 
   * Depend on screen
