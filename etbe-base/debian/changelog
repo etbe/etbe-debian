@@ -1,3 +1,9 @@
+etbe-base (0.3.11) bookworm; urgency=medium
+
+  * Depend on needrestart
+
+ -- Russell Coker <russell@coker.com.au>  Thu, 27 Jun 2024 08:36:34 +1000
+
 etbe-base (0.3.10) bookworm; urgency=medium
 
   * Made the alias for reportbug include /run/systemd/resolve for DNS on
