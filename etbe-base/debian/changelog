@@ -1,3 +1,10 @@
+etbe-base (0.3.1) bullseye; urgency=medium
+
+  * Add purge-removed
+  * Add /etc/sysctl.d/yama.conf to enable yama mode 1
+
+ -- Russell Coker <russell@coker.com.au>  Sun, 04 Apr 2021 12:17:56 +1000
+
 etbe-base (0.3.0) bullseye; urgency=medium
 
   * Add my key to /usr/share/keyrings for apt
