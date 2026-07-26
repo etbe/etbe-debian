@@ -1,3 +1,9 @@
+etbe-hardware (0.2.6) trixie; urgency=medium
+
+  * Conflicts with Plymouth
+
+ -- Russell Coker <russell@coker.com.au>  Wed, 29 Apr 2026 20:19:35 +1000
+
 etbe-hardware (0.2.5) trixie; urgency=medium
 
   * depend on read-edid
