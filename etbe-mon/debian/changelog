@@ -1,4 +1,11 @@
-etbe-mon (0.1-4) UNRELEASED; urgency=medium
+etbe-mon (0.1-5) unstable; urgency=medium
+
+  * Depend on libtimedate-perl and libmail-imapclient-perl for imap
+  * Make etbemyzones.monitor use noautowatch as the comment to avoid a zone
+
+ -- Russell Coker <russell@coker.com.au>  Wed, 03 Jan 2018 21:26:39 +1100
+
+etbe-mon (0.1-4) unstable; urgency=medium
 
   * Make etbemyzones.monitor not check for unregistered zones
   * Depend on libfilesys-df-perl for latest freespace.monitor
