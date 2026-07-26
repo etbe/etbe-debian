@@ -8,4 +8,5 @@ Standards-Version: 3.9.8
 Package: etbe-desktop
 Architecture: all
 Depends: gdm3|sddm, kitty, kmail, plasma-desktop, plasma-workspace, gwenview, dolphin, kwin-x11, systemsettings, mpv, kde-standard, qml-module-org-kde-newstuff, qt6-image-formats-plugins, kscreen, kde-config-screenlocker, waypipe, libreoffice-kf6, libreoffice-calc, libreoffice-writer, kimageformat6-plugins, fonts-noto-color-emoji, kweather
+Conflicts: pulseaudio
 Description: Basic dependencies for etbe desktop
