@@ -1,3 +1,9 @@
+etbe-mon (0.2.8) bookworm; urgency=medium
+
+  * Made etbe-mon-upgrade-xmpp do nothing if there is no old config file
+
+ -- Russell Coker <russell@coker.com.au>  Sat, 26 Aug 2023 09:40:17 +1000
+
 etbe-mon (0.2.7) bookworm; urgency=medium
 
   * Auto upgrade of xmpp config
