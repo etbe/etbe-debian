@@ -1,3 +1,9 @@
+etbe-devel (0.3) unstable; urgency=medium
+
+  * Properly fix wrap-build
+
+ -- Russell Coker <russell@coker.com.au>  Sun, 19 Nov 2023 17:51:11 +1100
+
 etbe-devel (0.2) unstable; urgency=medium
 
   * Fixed "time" command in wrap-build to be inside the container
