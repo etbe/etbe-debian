@@ -1,3 +1,9 @@
+etbe-base (0.6) trixie; urgency=medium
+
+  * Conflict with old ISC DHCP packages
+
+ -- Russell Coker <russell@coker.com.au>  Tue, 20 May 2025 17:36:08 +1000
+
 etbe-base (0.5) trixie; urgency=medium
 
   * Depend on linux-sysctl-defaults
