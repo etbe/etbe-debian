@@ -1,3 +1,9 @@
+etbe-desktop (0.4.6) bookworm; urgency=medium
+
+  * Added /etc/sysctl.d/etbe-desktop.conf to allow users to run dmesg
+
+ -- Russell Coker <russell@coker.com.au>  Mon, 29 Jan 2024 22:51:09 +1100
+
 etbe-desktop (0.4.5) bookworm; urgency=medium
 
   * Add script to update unattended upgrades
