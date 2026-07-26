@@ -2,11 +2,11 @@ Source: etbe-desktop
 Section: admin
 Priority: optional
 Maintainer: Russell Coker <russell@coker.com.au>
-Build-Depends: debhelper-compat (= 13)
-Standards-Version: 3.9.8
+Build-Depends: debhelper-compat (= 14)
+Standards-Version: 4.7.4
 
 Package: etbe-desktop
 Architecture: all
-Depends: gdm3|sddm, kitty, kmail, plasma-desktop, plasma-workspace, gwenview, dolphin, kwin-x11, systemsettings, mpv, kde-standard, qml-module-org-kde-newstuff, qt5-image-formats-plugins, kscreen, kde-config-screenlocker, waypipe, libreoffice-kf6, libreoffice-calc, libreoffice-writer, kimageformat6-plugins, fonts-noto-color-emoji, kweather, gstreamer1.0-qt6, dbus-user-session
-Conflicts: pulseaudio
-Description: Basic dependencies for etbe desktop
+Depends: gdm3|sddm, kitty, kmail, plasma-desktop, plasma-workspace, gwenview, dolphin, kwin-x11, systemsettings, mpv, kde-standard, qml-module-org-kde-newstuff, qt6-image-formats-plugins, kscreen, kde-config-screenlocker, waypipe, libreoffice-kf6, libreoffice-calc, libreoffice-writer, kimageformat6-plugins, fonts-noto-color-emoji, kweather, gstreamer1.0-qt6, dbus-user-session, xdg-desktop-portal-kde, nvtop, i2c-tools
+Conflicts: pulseaudio, libasound2-plugins, pulseaudio-utils, alsaplayer-common, alsa-utils
+Description: Basic dependencies for etbe desktop in forky

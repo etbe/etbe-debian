@@ -1,15 +1,40 @@
-etbe-desktop (0.5.6) trixie; urgency=medium
+etbe-desktop (0.6.5) forky; urgency=medium
 
-  * Depend on gstreamer1.0-qt6 for nheko
+  * Depend on i2c-tools
+
+ -- Russell Coker <russell@coker.com.au>  Fri, 24 Jul 2026 13:11:18 +1000
+
+etbe-desktop (0.6.4) forky; urgency=medium
+
+  * Depend on nvtop
+
+ -- Russell Coker <russell@coker.com.au>  Wed, 01 Jul 2026 18:46:16 +1000
+
+etbe-desktop (0.6.3) forky; urgency=medium
+
+  * Depend on xdg-desktop-portal-kde
+  * Conflict with alsa packages
+
+ -- Russell Coker <russell@coker.com.au>  Mon, 15 Jun 2026 11:39:15 +1000
+
+etbe-desktop (0.6.2) forky; urgency=medium
+
   * Depend on dbus-user-session
+  * Depend on gstreamer1.0-qt6 for nheko
 
- -- Russell Coker <russell@coker.com.au>  Sun, 14 Jun 2026 22:52:47 +1000
+ -- Russell Coker <russell@coker.com.au>  Sun, 14 Jun 2026 22:51:37 +1000
 
-etbe-desktop (0.5.5) trixie; urgency=medium
+etbe-desktop (0.6.1) forky; urgency=medium
 
-  * conflict with pulseaudio
+  * Conflict with pulseaudio
 
- -- Russell Coker <russell@coker.com.au>  Wed, 20 May 2026 20:11:35 +1000
+ -- Russell Coker <russell@coker.com.au>  Wed, 20 May 2026 20:16:34 +1000
+
+etbe-desktop (0.6.0) forky; urgency=medium
+
+  * Version for forky with only kde6 dependencies
+
+ -- Russell Coker <russell@coker.com.au>  Wed, 15 Apr 2026 20:35:41 +1000
 
 etbe-desktop (0.5.4) trixie; urgency=medium
 
