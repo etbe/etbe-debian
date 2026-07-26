@@ -1,7 +1,0 @@
-#!/bin/bash
-set -e
-
-if ! grep -q Edge /etc/apt/apt.conf.d/50unattended-upgrades ; then
-  echo 'Adding update rules for Chrome and Edge.'
-  sed -i '/.-backports/a // Edge browser\n"origin=edge stable,a=stable";\n// vscode\n"origin=code stable,a=stable";\n// Chrome\n"origin=Google LLC";\n' /etc/apt/apt.conf.d/50unattended-upgrades
-fi

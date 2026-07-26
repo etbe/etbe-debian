@@ -1,4 +1,0 @@
-#!/bin/sh
-for n in "$@" ; do
-  mpv --geometry=50%:50% --window-scale=0.5 "$n"
-done

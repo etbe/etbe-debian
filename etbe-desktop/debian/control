@@ -2,10 +2,10 @@ Source: etbe-desktop
 Section: admin
 Priority: optional
 Maintainer: Russell Coker <russell@coker.com.au>
-Build-Depends: debhelper-compat (= 13)
+Build-Depends: debhelper (>= 12)
 Standards-Version: 3.9.8
 
 Package: etbe-desktop
 Architecture: all
-Depends: gdm3|sddm, kitty, kmail, plasma-desktop, plasma-workspace, gwenview, dolphin, kwin-x11, systemsettings, mpv, kde-standard, qml-module-org-kde-newstuff, qt5-image-formats-plugins, kscreen, kde-config-screenlocker, waypipe
+Depends: sddm, konsole, kmail, plasma-desktop, plasma-workspace, gwenview, dolphin, kdepim-addons, kwin-x11, systemsettings, mpv, kde-standard, kwin-x11, qml-module-org-kde-newstuff
 Description: Basic dependencies for etbe desktop
