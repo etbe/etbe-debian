@@ -1,3 +1,9 @@
+etbe-desktop (0.4.4) bookworm; urgency=medium
+
+  * Added /etc/mpv/mpv.conf and use --hwdec=auto-safe
+
+ -- Russell Coker <russell@coker.com.au>  Thu, 30 Nov 2023 11:40:24 +1100
+
 etbe-desktop (0.4.3) bookworm; urgency=medium
 
   * kitty support

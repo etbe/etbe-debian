@@ -1,4 +1,4 @@
 #!/bin/sh
 for n in "$@" ; do
-  mpv --hwdec=auto --fs --geometry=50%:50% "$n"
+  mpv --fs --geometry=50%:50% "$n"
 done

@@ -1,2 +1,2 @@
 #!/bin/bash
-exec mpv --loop "$1"
+exec mpv --loop --geometry=50%:50% "$1"
