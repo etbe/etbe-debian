@@ -1,3 +1,9 @@
+etbe-base (0.5) trixie; urgency=medium
+
+  * Depend on linux-sysctl-defaults
+
+ -- Russell Coker <russell@coker.com.au>  Sun, 04 May 2025 14:24:06 +1000
+
 etbe-base (0.4) trixie; urgency=medium
 
   * pre-depends on unattended-upgrades so postinst can change it's config
