@@ -1,3 +1,9 @@
+etbe-mon (0.2.3) buster; urgency=medium
+
+  * add etbemyzones.monitor and etbemyzonesprimary.monitor back in
+
+ -- Russell Coker <russell@coker.com.au>  Thu, 07 Jan 2021 21:35:55 +1100
+
 etbe-mon (0.2.2) buster; urgency=medium
 
   * Depend on libsys-filesystem-perl for latest diskspace check
