@@ -1,3 +1,12 @@
+etbe-devel (0.2) unstable; urgency=medium
+
+  * Fixed "time" command in wrap-build to be inside the container
+  * Made the dpkg-buildpackage alias use -j
+  * Made wrap-build use the variable $BUILDBASE to specify the "chroot"
+    directory for the build
+
+ -- Russell Coker <russell@coker.com.au>  Sun, 19 Nov 2023 17:37:06 +1100
+
 etbe-devel (0.1) unstable; urgency=medium
 
   * Initial release
