@@ -1,15 +1,3 @@
-etbe-desktop (0.6.5) forky; urgency=medium
-
-  * Depend on i2c-tools
-
- -- Russell Coker <russell@coker.com.au>  Fri, 24 Jul 2026 13:11:18 +1000
-
-etbe-desktop (0.6.4) forky; urgency=medium
-
-  * Depend on nvtop
-
- -- Russell Coker <russell@coker.com.au>  Wed, 01 Jul 2026 18:46:16 +1000
-
 etbe-desktop (0.6.3) forky; urgency=medium
 
   * Depend on xdg-desktop-portal-kde
