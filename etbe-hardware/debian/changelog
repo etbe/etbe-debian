@@ -1,3 +1,9 @@
+etbe-hardware (0.1-4) buster; urgency=medium
+
+  * Latest update to boincmgr-cron
+
+ -- Russell Coker <russell@coker.com.au>  Wed, 06 Jan 2021 09:27:45 +1100
+
 etbe-hardware (0.1-3) unstable; urgency=medium
 
   * suggests boinc-client-opencl for ATI GPU

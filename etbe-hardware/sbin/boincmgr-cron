@@ -8,11 +8,9 @@ use Sys::Syslog;
 # Essendon Airport
 # http://www.bom.gov.au/products/IDV60901/IDV60901.94866.shtml
 
-#my $URL = "http://www.bom.gov.au/products/IDV60901/IDV60901.94866.shtml";
 my $URL = $ARGV[0];
-system("wget -o wget.log -O bom.html $URL");
 
-open(IN, "<bom.html") or die "Can't open file bom.html";
+open(IN, "wget -o /dev/null -O - $URL|") or die "Can't get $URL";
 while(<IN>)
 {
   if($_ =~ /tr class=.rowleftcolumn/)
@@ -53,14 +51,14 @@ while(<IN>)
   }
 }
 close(IN);
-if($#datetime == -1 or $cur_temp == -100)
+if($#datetime != 1 or $cur_temp == -100)
 {
   die "Can't parse BOM data";
 }
 
 my ($sec,$min,$hour,$mday,$mon,$year,$wday,$yday,$isdst) = localtime();
 
-if($datetime[0] != $mday)
+if($mday - $datetime[0] > 1 or ($datetime[0] > $mday and $mday != 1))
 {
   die "Date wrong\n";
 }
@@ -71,6 +69,10 @@ $mins = $timearr[0] * 60 + $timearr [1];
 if($timearr[1] =~ /pm/)
 {
   $mins += 720;
+}
+if($mday != $datetime[0])
+{
+  $mins += 1440;
 }
 
 if($mins + 60 < $hour * 60 + $min)
