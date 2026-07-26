@@ -1,3 +1,9 @@
+etbe-mon (0.2.1) buster; urgency=medium
+
+  * Added mon-shared-status script
+
+ -- Russell Coker <russell@coker.com.au>  Wed, 09 Dec 2020 14:29:12 +1100
+
 etbe-mon (0.1-6) unstable; urgency=medium
 
   * depend on libbsd-resource-perl for mailxmpp.alert

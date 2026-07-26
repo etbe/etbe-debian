@@ -1,6 +1,7 @@
+
 all:
 
 
 install:
-	mkdir -p $(DESTDIR)/usr/lib/mon/mon.d
-	install mon.d/* $(DESTDIR)/usr/lib/mon/mon.d
+	mkdir -p $(DESTDIR)/usr/sbin
+	install sbin/* $(DESTDIR)/usr/sbin
