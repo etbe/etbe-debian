@@ -1,0 +1,9 @@
+#!/bin/bash
+set -e
+eval cd ~$1
+mkdir -p .config/go-sendxmpp
+U=$(cut -f1 -d\  .sendxmpprc)
+P=$(cut -f2 -d\  .sendxmpprc)
+echo "username: $U" > .config/go-sendxmpp/config
+echo "password: $P" >> .config/go-sendxmpp/config
+chmod 600 .config/go-sendxmpp/config
