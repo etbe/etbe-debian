@@ -1,3 +1,9 @@
+etbe-base (0.3.12) bookworm; urgency=medium
+
+  * Depend on gdb | gdb-minimal for trixie
+
+ -- Russell Coker <russell@coker.com.au>  Fri, 02 Aug 2024 17:41:01 +1000
+
 etbe-base (0.3.11) bookworm; urgency=medium
 
   * Depend on needrestart
