@@ -1,3 +1,9 @@
+etbe-desktop (0.4.8) bookworm; urgency=medium
+
+  * Added dependency on kscreen for screen settings
+
+ -- Russell Coker <russell@coker.com.au>  Sat, 17 Feb 2024 12:38:49 +1100
+
 etbe-desktop (0.4.7) bookworm; urgency=medium
 
   * Added new key for chrome apt
