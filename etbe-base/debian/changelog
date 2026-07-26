@@ -1,3 +1,9 @@
+etbe-base (0.3.4) bullseye; urgency=medium
+
+  * Added PG_Release_Engineering@Dell.com key
+
+ -- Russell Coker <russell@coker.com.au>  Sun, 30 Jan 2022 15:08:18 +1100
+
 etbe-base (0.3.3) bullseye; urgency=medium
 
   * Depend on systemd-coredump | apport instead of systemd-coredump so it can
