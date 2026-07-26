@@ -1,4 +1,5 @@
 usr/bin/* usr/bin
+usr/sbin/* usr/sbin
 usr/share/keyrings/* usr/share/keyrings
 etc/bash.etbe/* etc/bash.etbe
 etc/mpv/* etc/mpv

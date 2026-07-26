@@ -1,3 +1,9 @@
+etbe-desktop (0.4.5) bookworm; urgency=medium
+
+  * Add script to update unattended upgrades
+
+ -- Russell Coker <russell@coker.com.au>  Fri, 26 Jan 2024 17:07:25 +1100
+
 etbe-desktop (0.4.4) bookworm; urgency=medium
 
   * Added /etc/mpv/mpv.conf and use --hwdec=auto-safe

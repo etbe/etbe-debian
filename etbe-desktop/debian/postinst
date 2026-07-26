@@ -1,0 +1,6 @@
+#!/bin/bash
+set -e
+
+if [ "$1" = "configure" ] && dpkg --compare-versions "$2" lt 0.4.5; then
+  /usr/sbin/etbe-desktop-fix-unattended-upgrades
+fi
