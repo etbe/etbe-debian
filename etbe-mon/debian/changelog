@@ -1,3 +1,9 @@
+etbe-mon (0.2.5) bookworm; urgency=medium
+
+  * Depend on go-sendxmpp instead of sendxmpp
+
+ -- Russell Coker <russell@coker.com.au>  Sun, 26 Mar 2023 13:05:30 +1100
+
 etbe-mon (0.2.4) bullseye; urgency=medium
 
   * Depend on libhash-case-perl because imapnew.monitor now needs it
