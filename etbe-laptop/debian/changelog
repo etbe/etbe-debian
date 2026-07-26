@@ -1,3 +1,9 @@
+etbe-laptop (0.5) trixie; urgency=medium
+
+  * Remove dependency on kde-config-mobile-networking
+
+ -- Russell Coker <russell@coker.com.au>  Tue, 15 Apr 2025 14:49:15 +1000
+
 etbe-laptop (0.4) trixie; urgency=medium
 
   * Depend on powerdevil
