@@ -1,0 +1,10 @@
+Package: etbe-base
+Version: 0.2-1
+Architecture: all
+Maintainer: Russell Coker <russell@coker.com.au>
+Installed-Size: 9
+Depends: auditd, selinux-basics, selinux-policy-default, selinux-policy-dev, strace, ltrace, gdb, tcpdump, sysstat, bc, ca-certificates, iotop, lsof, rsync, reportbug, symlinks, traceroute, bash-completion, man-db, bsd-mailx, systemd, dbus, manpages, postfix, debian-goodies
+Recommends: smartmontools
+Section: admin
+Priority: optional
+Description: Basic dependencies for etbe

@@ -1,0 +1,24 @@
+etbe-base (0.2-1) unstable; urgency=medium
+
+  * Depend on debian-goodies for checkrestart
+
+ -- Russell Coker <russell@coker.com.au>  Tue, 04 Feb 2020 13:53:23 +1100
+
+etbe-base (0.1-3) unstable; urgency=medium
+
+  * Depend on auditd, iotop, lsof,  rsync, reportbug, symlinks, traceroute,
+    bash-completion, man-db, bsd-mailx, systemd, dbus, manpages, and postfix
+
+ -- Russell Coker <russell@coker.com.au>  Sun, 17 Sep 2017 16:39:04 +1000
+
+etbe-base (0.1-2) unstable; urgency=medium
+
+  * Added dependency on ca-certificates
+
+ -- Russell Coker <russell@coker.com.au>  Fri, 15 Sep 2017 15:23:48 +1000
+
+etbe-base (0.1-1) unstable; urgency=medium
+
+  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+
+ -- Russell Coker <russell@coker.com.au>  Sat, 17 Jun 2017 20:04:02 +1000
