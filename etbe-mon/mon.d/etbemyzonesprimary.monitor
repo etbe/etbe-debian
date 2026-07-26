@@ -4,7 +4,7 @@ set -e
 CONF=$1
 shift
 
-DOMAINS="$(grep zone $CONF|sed -e s/^zone..// -e s/\"\ .$//|grep -v ^//|grep -v ^virtual$ | grep -v ^dyn)"
+DOMAINS="$(grep zone $CONF|sed -e s/^zone..// -e s/\"\ .*$//|grep -v ^//|grep -v ^virtual$ | grep -v ^dyn)"
 
 QUERYDOMAINS=$(for n in $DOMAINS; do echo -zone $n ; done)
 

@@ -2,7 +2,7 @@
 
 CONF=$1
 
-DOMAINS="$(grep zone $CONF|sed -e s/^zone..// -e s/\"\ .$//|grep -v ^//|grep -v ^virtual$ | grep -v ^dyn | grep -v arpa$ | grep -v abbotsfordhondape.com.au)"
+DOMAINS="$(grep zone $CONF|grep -v unregistered|sed -e s/^zone..// -e s/\"\ .$//|grep -v ^//|grep -v ^virtual$ | grep -v ^dyn | grep -v arpa$)"
 REV6="$(grep zone.*ip6.arpa $CONF|sed -e s/^zone..// -e s/\"\ .$//|grep -v ^//)"
 
 set -e
