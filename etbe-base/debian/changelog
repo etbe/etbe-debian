@@ -1,3 +1,9 @@
+etbe-base (0.3.7) bookworm; urgency=medium
+
+  * Depend on debsums
+
+ -- Russell Coker <russell@coker.com.au>  Sat, 26 Aug 2023 09:36:18 +1000
+
 etbe-base (0.3.6) bullseye; urgency=medium
 
   * Add /etc/bash.etbe/*.sh file support
