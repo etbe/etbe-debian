@@ -1,0 +1,11 @@
+Source: etbe-laptop
+Section: admin
+Priority: optional
+Maintainer: Russell Coker <russell@coker.com.au>
+Build-Depends: debhelper-compat (= 13)
+Standards-Version: 3.9.8
+
+Package: etbe-laptop
+Architecture: all
+Depends: wpasupplicant, wireless-tools, network-manager, etbe-desktop, kde-config-mobile-networking
+Description: Basic dependencies for etbe laptop
