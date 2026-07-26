@@ -1,0 +1,3 @@
+#!/bin/bash
+exec screen -S $(echo $1 | sed -e s/kvm.//) -d -m $1
+
