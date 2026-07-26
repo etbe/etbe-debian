@@ -1,0 +1,10 @@
+#!/bin/bash
+set -e
+
+for FILE in /root/.bashrc /etc/skel/.bashrc /home/*/.bashrc ; do
+  if ! grep -q bash.etbe $FILE ; then
+    echo 'for FILE in /etc/bash.etbe/*.sh ; do' >> $FILE
+    echo '  source $FILE' >> $FILE
+    echo 'done' >> $FILE
+  fi
+done
