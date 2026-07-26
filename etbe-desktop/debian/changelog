@@ -1,3 +1,10 @@
+etbe-desktop (0.4.1) bookworm; urgency=medium
+
+  * Use debian/install instead of makefile
+  * Add scripts l and h for video playing loop and half-size
+
+ -- Russell Coker <russell@coker.com.au>  Sat, 09 Sep 2023 23:03:14 +1000
+
 etbe-desktop (0.4.0) bookworm; urgency=medium
 
   * Add Chrome/Chromium policy with start file /etc/links.html
