@@ -1,3 +1,13 @@
+etbe-devel (0.5) trixie; urgency=medium
+
+  * Add extra checks on wrap-build
+  * Made wrap-build use nice
+  * Made wrap-build map all of /var/lib
+  * Depend on time
+  * New debhelper-compat and fix depends
+
+ -- Russell Coker <russell@coker.com.au>  Thu, 01 Jan 2026 21:22:29 +1100
+
 etbe-devel (0.4) bookworm; urgency=medium
 
   * Fix BUILDBASE in wrap-build

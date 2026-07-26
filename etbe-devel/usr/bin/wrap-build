@@ -2,9 +2,21 @@
 set -e
 
 BUILDDIR=$(realpath $(pwd)/..)
+if [ "$BUILDDIR" == "/" ]; then
+  echo "Can't run when parent is root"
+  exit 1
+fi
+if [ "$BUILDDIR" == "$HOME" ]; then
+  echo "Can't run when parent is HOME"
+  exit 1
+fi
+if [ "$BUILDDIR" == "/home" ]; then
+  echo "Can't run when parent is /home"
+  exit 1
+fi
 
 if [ -d $BUILDBASE/usr/lib64 ]; then
   WRAP_EXTRA="--symlink usr/lib64 /lib64"
 fi
 
-bwrap --bind /tmp /tmp --bind $BUILDDIR $BUILDDIR --ro-bind $BUILDBASE/etc /etc --ro-bind $BUILDBASE/usr /usr --ro-bind $BUILDBASE/var/lib/dpkg /var/lib/dpkg --symlink usr/bin /bin --symlink usr/sbin /sbin $WRAP_EXTRA --symlink usr/lib /lib --proc /proc --dev /dev --die-with-parent --unshare-user --unshare-ipc --unshare-net --unshare-pid --new-session --uid 0 --gid 0 time "$@"
+exec nice bwrap --bind /tmp /tmp --bind $BUILDDIR $BUILDDIR --ro-bind $BUILDBASE/etc /etc --ro-bind $BUILDBASE/usr /usr --ro-bind $BUILDBASE/var/lib /var/lib --symlink usr/bin /bin --symlink usr/sbin /sbin $WRAP_EXTRA --symlink usr/lib /lib --proc /proc --dev /dev --die-with-parent --unshare-user --unshare-ipc --unshare-net --unshare-pid --new-session --uid 0 --gid 0 time "$@"
