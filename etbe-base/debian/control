@@ -2,11 +2,11 @@ Source: etbe-base
 Section: admin
 Priority: optional
 Maintainer: Russell Coker <russell@coker.com.au>
-Build-Depends: debhelper (>= 9)
+Build-Depends: debhelper (>= 12)
 Standards-Version: 3.9.8
 
 Package: etbe-base
 Architecture: all
-Depends: auditd, selinux-basics, selinux-policy-default, selinux-policy-dev, strace, ltrace, gdb, tcpdump, sysstat, bc, ca-certificates, iotop, lsof, rsync, reportbug, symlinks, traceroute, bash-completion, man-db, bsd-mailx, systemd, dbus, manpages, postfix, debian-goodies
+Depends: auditd, selinux-basics, selinux-policy-default, selinux-policy-dev, strace, ltrace, gdb, tcpdump, sysstat, bc, ca-certificates, iotop, lsof, rsync, reportbug, symlinks, traceroute, bash-completion, man-db, bsd-mailx, systemd, dbus, manpages, postfix, debian-goodies, attr, ethstats, net-tools, execstack, systemd-coredump
 Recommends: smartmontools
 Description: Basic dependencies for etbe

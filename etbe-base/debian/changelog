@@ -1,3 +1,40 @@
+etbe-base (0.3.0) bullseye; urgency=medium
+
+  * Add my key to /usr/share/keyrings for apt
+
+ -- Russell Coker <russell@coker.com.au>  Tue, 30 Mar 2021 02:18:42 +1100
+
+etbe-base (0.2-6) buster; urgency=medium
+
+  * Depend on systemd-coredump
+
+ -- Russell Coker <russell@coker.com.au>  Thu, 04 Mar 2021 21:43:49 +1100
+
+etbe-base (0.2-5) buster; urgency=medium
+
+  * Depend on execstack
+
+ -- Russell Coker <russell@coker.com.au>  Sat, 05 Dec 2020 23:16:39 +1100
+
+etbe-base (0.2-4) buster; urgency=medium
+
+  * Depend on net-tools
+
+ -- Russell Coker <russell@coker.com.au>  Fri, 16 Oct 2020 12:41:21 +1100
+
+etbe-base (0.2-3) unstable; urgency=medium
+
+  * Depend on ethstats
+
+ -- Russell Coker <russell@coker.com.au>  Tue, 06 Oct 2020 20:44:37 +1100
+
+etbe-base (0.2-2) unstable; urgency=medium
+
+  * Depend on attr
+  * Depend on debhelper >12
+
+ -- Russell Coker <russell@coker.com.au>  Sun, 20 Sep 2020 12:53:43 +1000
+
 etbe-base (0.2-1) unstable; urgency=medium
 
   * Depend on debian-goodies for checkrestart
