@@ -1,3 +1,9 @@
+etbe-base (0.3.9) bookworm; urgency=medium
+
+  * Depend on kitty-terminfo
+
+ -- Russell Coker <russell@coker.com.au>  Sat, 28 Oct 2023 22:52:25 +1100
+
 etbe-base (0.3.8) bookworm; urgency=medium
 
   * Depend on bubblewrap and add alias for reportbug
