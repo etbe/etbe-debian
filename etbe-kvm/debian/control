@@ -7,5 +7,5 @@ Standards-Version: 3.9.8
 
 Package: etbe-kvm
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, screen, qemu-kvm, bridge-utils
+Depends: ${shlibs:Depends}, ${misc:Depends}, screen, qemu-system-x86, bridge-utils
 Description: etbe kvm scripts etc
