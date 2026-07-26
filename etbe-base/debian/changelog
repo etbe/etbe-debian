@@ -1,3 +1,9 @@
+etbe-base (0.9) trixie; urgency=medium
+
+  * Depend on dbus-bin instead of dbus
+
+ -- Russell Coker <russell@coker.com.au>  Sat, 13 Dec 2025 16:15:01 +1100
+
 etbe-base (0.8) trixie; urgency=medium
 
   * Depend on wtmpdb
