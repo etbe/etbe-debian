@@ -1,3 +1,11 @@
+etbe-base (0.3.10) bookworm; urgency=medium
+
+  * Made the alias for reportbug include /run/systemd/resolve for DNS on
+    systemd
+  * Add script to update unattended upgrades
+
+ -- Russell Coker <russell@coker.com.au>  Fri, 26 Jan 2024 17:09:37 +1100
+
 etbe-base (0.3.9) bookworm; urgency=medium
 
   * Depend on kitty-terminfo

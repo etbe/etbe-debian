@@ -1,0 +1,6 @@
+#!/bin/bash
+set -e
+
+if [ "$1" = "configure" ] && dpkg --compare-versions "$2" lt 0.3.10; then
+  /usr/sbin/etbe-base-fix-unattended-upgrades
+fi
