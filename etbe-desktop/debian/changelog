@@ -1,3 +1,9 @@
+etbe-desktop (0.5.1) trixie; urgency=medium
+
+  * new GPG key for Chrome
+
+ -- Russell Coker <russell@coker.com.au>  Thu, 30 Jan 2025 20:00:24 +1100
+
 etbe-desktop (0.5.0) trixie; urgency=medium
 
   * Depend on waypipe
