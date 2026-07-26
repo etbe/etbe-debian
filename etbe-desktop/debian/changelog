@@ -1,3 +1,10 @@
+etbe-desktop (0.6.2) forky; urgency=medium
+
+  * Depend on dbus-user-session
+  * Depend on gstreamer1.0-qt6 for nheko
+
+ -- Russell Coker <russell@coker.com.au>  Sun, 14 Jun 2026 22:51:37 +1000
+
 etbe-desktop (0.6.1) forky; urgency=medium
 
   * Conflict with pulseaudio
