@@ -1,3 +1,9 @@
+etbe-devel (0.4) bookworm; urgency=medium
+
+  * Fix BUILDBASE in wrap-build
+
+ -- Russell Coker <russell@coker.com.au>  Fri, 23 Feb 2024 13:56:46 +1100
+
 etbe-devel (0.3) unstable; urgency=medium
 
   * Properly fix wrap-build

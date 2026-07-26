@@ -3,4 +3,8 @@ set -e
 
 BUILDDIR=$(realpath $(pwd)/..)
 
-bwrap --bind /tmp /tmp --bind $BUILDDIR $BUILDDIR --ro-bind /etc /etc --ro-bind $BUILDBASE/usr /usr --ro-bind $BUILDBUILDBASE/var/lib/dpkg /var/lib/dpkg --symlink usr/bin /bin --symlink usr/sbin /sbin --symlink usr/lib64 /lib64 --symlink usr/lib /lib --proc /proc --dev /dev --die-with-parent --unshare-user --unshare-ipc --unshare-net --unshare-pid --new-session --uid 0 --gid 0 time "$@"
+if [ -d $BUILDBASE/usr/lib64 ]; then
+  WRAP_EXTRA="--symlink usr/lib64 /lib64"
+fi
+
+bwrap --bind /tmp /tmp --bind $BUILDDIR $BUILDDIR --ro-bind $BUILDBASE/etc /etc --ro-bind $BUILDBASE/usr /usr --ro-bind $BUILDBASE/var/lib/dpkg /var/lib/dpkg --symlink usr/bin /bin --symlink usr/sbin /sbin $WRAP_EXTRA --symlink usr/lib /lib --proc /proc --dev /dev --die-with-parent --unshare-user --unshare-ipc --unshare-net --unshare-pid --new-session --uid 0 --gid 0 time "$@"
