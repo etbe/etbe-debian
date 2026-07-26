@@ -1,15 +1,97 @@
-etbe-desktop (0.2.2) bullseye; urgency=medium
+etbe-desktop (0.5.2) trixie; urgency=medium
 
-  * new GPG key for Chrome 
-  * Updated compat to 12
+  * Fixed HomepageLocation in Chrome/Chromium managed policy
+  * Depend on libreoffice
 
- -- Russell Coker <russell@coker.com.au>  Thu, 30 Jan 2025 20:01:57 +1100
+ -- Russell Coker <russell@coker.com.au>  Sun, 10 Aug 2025 12:30:18 +1000
 
-etbe-desktop (0.2.1) bullseye; urgency=medium
+etbe-desktop (0.5.1) trixie; urgency=medium
+
+  * new GPG key for Chrome
+
+ -- Russell Coker <russell@coker.com.au>  Thu, 30 Jan 2025 20:00:24 +1100
+
+etbe-desktop (0.5.0) trixie; urgency=medium
+
+  * Depend on waypipe
+  * Removed dependency on plasma-workspace-wayland
+  * Use new build-depends for debhelper
+
+ -- Russell Coker <russell@coker.com.au>  Thu, 05 Dec 2024 00:36:43 +1100
+
+etbe-desktop (0.4.8) bookworm; urgency=medium
+
+  * Added dependency on kscreen for screen settings
+
+ -- Russell Coker <russell@coker.com.au>  Sat, 17 Feb 2024 12:38:49 +1100
+
+etbe-desktop (0.4.7) bookworm; urgency=medium
+
+  * Added new key for chrome apt
+
+ -- Russell Coker <russell@coker.com.au>  Wed, 07 Feb 2024 21:32:35 +1100
+
+etbe-desktop (0.4.6) bookworm; urgency=medium
+
+  * Added /etc/sysctl.d/etbe-desktop.conf to allow users to run dmesg
+
+ -- Russell Coker <russell@coker.com.au>  Mon, 29 Jan 2024 22:51:09 +1100
+
+etbe-desktop (0.4.5) bookworm; urgency=medium
+
+  * Add script to update unattended upgrades
+
+ -- Russell Coker <russell@coker.com.au>  Fri, 26 Jan 2024 17:07:25 +1100
+
+etbe-desktop (0.4.4) bookworm; urgency=medium
+
+  * Added /etc/mpv/mpv.conf and use --hwdec=auto-safe
+
+ -- Russell Coker <russell@coker.com.au>  Thu, 30 Nov 2023 11:40:24 +1100
+
+etbe-desktop (0.4.3) bookworm; urgency=medium
+
+  * kitty support
+
+ -- Russell Coker <russell@coker.com.au>  Fri, 27 Oct 2023 20:18:08 +1100
+
+etbe-desktop (0.4.2) bookworm; urgency=medium
+
+  * Fix location of key files in previous package
+
+ -- Russell Coker <russell@coker.com.au>  Sat, 09 Sep 2023 23:35:47 +1000
+
+etbe-desktop (0.4.1) bookworm; urgency=medium
+
+  * Use debian/install instead of makefile
+  * Add scripts l and h for video playing loop and half-size
+
+ -- Russell Coker <russell@coker.com.au>  Sat, 09 Sep 2023 23:03:14 +1000
+
+etbe-desktop (0.4.0) bookworm; urgency=medium
+
+  * Add Chrome/Chromium policy with start file /etc/links.html
+
+ -- Russell Coker <russell@coker.com.au>  Wed, 03 May 2023 20:22:53 +1000
+
+etbe-desktop (0.3.2) bookworm; urgency=medium
 
   * new Google key
 
- -- Russell Coker <russell@coker.com.au>  Sun, 03 Jul 2022 23:34:39 +1000
+ -- Russell Coker <russell@coker.com.au>  Sun, 03 Jul 2022 23:30:16 +1000
+
+etbe-desktop (0.3.1) bookworm; urgency=medium
+
+  * Depend on plasma-workspace-wayland and qt5-image-formats-plugins (webp)
+
+ -- Russell Coker <russell@coker.com.au>  Fri, 08 Apr 2022 13:54:12 +1000
+
+etbe-desktop (0.3.0) bookworm; urgency=medium
+
+  * Don't depend on kdepim-addons
+  * Depend on gdm3|sddm
+
+ -- Russell Coker <russell@coker.com.au>  Sun, 03 Apr 2022 18:33:25 +1000
 
 etbe-desktop (0.2.0) bullseye; urgency=medium
 

@@ -1,0 +1,15 @@
+{
+  "DefaultClipboardSetting": 2,
+  "DefaultWindowManagementSetting": 2,
+  "BatterySaverModeAvailability": 2,
+  "AudioSandboxEnabled": true,
+  "ShowHomeButton": true,
+  "NewTabPageLocation": "file:///etc/links.html",
+  "HomepageLocation": "file://etc/links.html",
+  "DiskCacheSize": 300123456,
+  "ZZExtensionInstallBlocklist": [ "*" ],
+  "ExtensionInstallAllowlistComment": [ "cdfdkmklcjlnnnlnplffpdiekfhkpbme High Contrast Colorful google theme", "ghbmnnjooekpmoecnnnilnnbdlolhkhi is google docs offline" ],
+  "ExtensionInstallAllowlist": [ "cdfdkmklcjlnnnlnplffpdiekfhkpbme", "ghbmnnjooekpmoecnnnilnnbdlolhkhi" ],
+  "ExtensionInstallForcelistComment": [ "cjpalhdlnbpafiamejdnhcphjbkeiagm is ublock origin", "edacconmaakjimmfgnblocblbcdcpbko is session buddy" ],
+  "ExtensionInstallForcelist": [ "cjpalhdlnbpafiamejdnhcphjbkeiagm", "edacconmaakjimmfgnblocblbcdcpbko" ]
+}
