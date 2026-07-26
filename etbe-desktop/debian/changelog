@@ -1,3 +1,9 @@
+etbe-desktop (0.2.0) bullseye; urgency=medium
+
+  * Include apt gpg key for Google Chrome repository
+
+ -- Russell Coker <russell@coker.com.au>  Tue, 30 Mar 2021 02:08:14 +1100
+
 etbe-desktop (0.1-4) buster; urgency=medium
 
   * Fix mpv scripte
