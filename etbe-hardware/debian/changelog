@@ -1,3 +1,10 @@
+etbe-hardware (0.1-5) UNRELEASED; urgency=medium
+
+  * Add dmidecode and spectre-meltdown-checker to depends
+  * Add script rename-int
+
+ -- Russell Coker <russell@coker.com.au>  Mon, 01 Mar 2021 21:41:01 +1100
+
 etbe-hardware (0.1-4) buster; urgency=medium
 
   * Latest update to boincmgr-cron

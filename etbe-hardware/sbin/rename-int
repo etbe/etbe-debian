@@ -1,0 +1,9 @@
+#!/bin/bash
+SOURCE=$1
+DEST=$2
+MAC=$(ifconfig $SOURCE|grep ether|sed -e s/^.*ether.// -e "s/ .*$//")
+FILE=/etc/systemd/network/10-$1-net.link
+echo "[Match]" > $FILE
+echo "MACAddress=$MAC" >> $FILE
+echo "[Link]" >> $FILE
+echo "Name=$DEST" >> $FILE
