@@ -1,8 +1,9 @@
-etbe-mon (0.1-2) UNRELEASED; urgency=medium
+etbe-mon (0.1-3) UNRELEASED; urgency=medium
 
   * Make etbemyzones.monitor not check for unregistered zones
+  * Depend on libfilesys-df-perl for latest freespace.monitor
 
- -- Russell Coker <russell@coker.com.au>  Tue, 01 Aug 2017 11:14:45 +1000
+ -- Russell Coker <russell@coker.com.au>  Sun, 27 Aug 2017 14:50:06 +1000
 
 etbe-mon (0.1-1) unstable; urgency=medium
 
