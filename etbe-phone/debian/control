@@ -7,5 +7,5 @@ Standards-Version: 3.9.8
 
 Package: etbe-phone
 Architecture: all
-Depends: etbe-base, wpasupplicant, wireless-tools, network-manager, plasma-mobile-phone, nheko, lollypop, kwalletmanager, waypipe, geary, wike
+Depends: etbe-base, wpasupplicant, wireless-tools, network-manager, plasma-mobile-phone, nheko, lollypop, kwalletmanager, waypipe, geary, wike, libnotify-bin
 Description: Basic dependencies for etbe phone

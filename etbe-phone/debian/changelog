@@ -1,3 +1,9 @@
+etbe-phone (0.5) trixie; urgency=medium
+
+  * depend on libnotify-bin
+
+ -- Russell Coker <russell@coker.com.au>  Thu, 02 Apr 2026 23:43:52 +1100
+
 etbe-phone (0.4) unstable; urgency=medium
 
   * Add dependencies on geary and wike
