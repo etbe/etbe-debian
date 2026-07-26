@@ -1,3 +1,9 @@
+etbe-mon (0.2.2) buster; urgency=medium
+
+  * Depend on libsys-filesystem-perl for latest diskspace check
+
+ -- Russell Coker <russell@coker.com.au>  Fri, 11 Dec 2020 00:37:38 +1100
+
 etbe-mon (0.2.1) buster; urgency=medium
 
   * Added mon-shared-status script
