@@ -1,0 +1,5 @@
+etc/bash.etbe/*
+usr/sbin/*
+usr/share/keyrings/*
+etc/ssh/sshd_config.d/etbe.conf
+etc/ssh/ssh_config.d/etbe.conf

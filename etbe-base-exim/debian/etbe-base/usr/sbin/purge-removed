@@ -1,0 +1,3 @@
+#!/bin/bash
+
+dpkg --purge $(dpkg -l|grep ^rc|cut -c5-80|cut -f1 -d\ )

@@ -1,0 +1,4 @@
+/etc/bash.etbe/base.sh
+/etc/bash.etbe/security.sh
+/etc/ssh/ssh_config.d/etbe.conf
+/etc/ssh/sshd_config.d/etbe.conf

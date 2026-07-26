@@ -1,0 +1,14 @@
+Source: etbe-base-exim
+Section: admin
+Priority: optional
+Maintainer: Russell Coker <russell@coker.com.au>
+Build-Depends: debhelper (>= 13)
+Standards-Version: 3.9.8
+
+Package: etbe-base-exim
+Architecture: all
+Pre-Depends: unattended-upgrades
+Depends: auditd, selinux-basics, selinux-policy-default, selinux-policy-dev, strace, ltrace, gdb | gdb-minimal, tcpdump, sysstat, bc, ca-certificates, iotop, lsof, rsync, reportbug, symlinks, traceroute, bash-completion, man-db, bsd-mailx, systemd, dbus-bin, manpages, exim4-daemon-heavy, debian-goodies, attr, ethstats, net-tools, systemd-coredump | apport, unattended-upgrades, debsums, bubblewrap, kitty-terminfo, needrestart, linux-sysctl-defaults, screen
+Conflicts: isc-dhcp-client, isc-dhcp-common, isc-dhcp-server
+Recommends: smartmontools
+Description: Basic dependencies for etbe

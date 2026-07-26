@@ -1,0 +1,13 @@
+For SE Linux it depends on:
+selinux-basics
+selinux-policy-default
+selinux-policy-dev
+
+For general sysadmin:
+strace
+ltrace
+gdb
+tcpdump
+sysstat
+bc
+debian-goodies

@@ -1,0 +1,7 @@
+#!/bin/bash
+set -e
+
+if ! grep -q Russell /etc/apt/apt.conf.d/50unattended-upgrades ; then
+  echo 'Adding update rules for Chrome and Edge.'
+  sed -i '/.-backports/a // Russell stuff\n"origin=Russell Coker";\n' /etc/apt/apt.conf.d/50unattended-upgrades
+fi

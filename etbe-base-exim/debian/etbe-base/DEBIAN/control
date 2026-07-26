@@ -1,0 +1,12 @@
+Package: etbe-base
+Version: 0.12
+Architecture: all
+Maintainer: Russell Coker <russell@coker.com.au>
+Installed-Size: 83
+Pre-Depends: unattended-upgrades
+Depends: auditd, selinux-basics, selinux-policy-default, selinux-policy-dev, strace, ltrace, gdb | gdb-minimal, tcpdump, sysstat, bc, ca-certificates, iotop, lsof, rsync, reportbug, symlinks, traceroute, bash-completion, man-db, bsd-mailx, systemd, dbus-bin, manpages, exim4-daemon-heavy, debian-goodies, attr, ethstats, net-tools, systemd-coredump | apport, debsums, bubblewrap, kitty-terminfo, needrestart, linux-sysctl-defaults, screen, wtmpdb
+Recommends: smartmontools
+Conflicts: isc-dhcp-client, isc-dhcp-common, isc-dhcp-server
+Section: admin
+Priority: optional
+Description: Basic dependencies for etbe

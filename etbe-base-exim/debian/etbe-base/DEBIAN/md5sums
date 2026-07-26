@@ -1,0 +1,7 @@
+3ac03bad897176f5dd2c11f1468f2074  usr/sbin/etbe-base-fix-unattended-upgrades
+d8d737c29213a66854c1ac0e7cb8329a  usr/sbin/purge-removed
+10bb7b41a4cf756cac8e718c556a6cd0  usr/sbin/zswapstats
+e06db798d7ea3ee1f82e08b830cb8626  usr/share/doc/etbe-base/changelog.gz
+d8d983eb88eb71f1fa0c93d0c83abebd  usr/share/doc/etbe-base/copyright
+bb5b457b93ccbe4fa6973e0e5e222c77  usr/share/keyrings/PG_Release_Engineering@Dell.com
+97825f5f06ec1aa2f926393cd43ce3fd  usr/share/keyrings/etbe.gpg
