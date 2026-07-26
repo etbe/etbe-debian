@@ -1,3 +1,9 @@
+etbe-hardware (0.2.5) trixie; urgency=medium
+
+  * depend on read-edid
+
+ -- Russell Coker <russell@coker.com.au>  Sat, 28 Mar 2026 23:39:23 +1100
+
 etbe-hardware (0.2.4) trixie; urgency=medium
 
   * Add corefreq command to display CPU frequencies

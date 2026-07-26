@@ -7,7 +7,7 @@ Standards-Version: 3.9.8
 
 Package: etbe-hardware
 Architecture: all
-Depends: etbe-base, ethtool, dmidecode, spectre-meltdown-checker, lsscsi, pwgen
+Depends: etbe-base, ethtool, dmidecode, spectre-meltdown-checker, lsscsi, pwgen, read-edid
 Recommends: smartmontools
 Suggests: boinc-client-opencl
 Description: Package dependencies for hardware (non-VM)
