@@ -1,10 +1,16 @@
-etbe-desktop (0.3.1) trixie; urgency=medium
+etbe-desktop (0.3.2) bookworm; urgency=medium
+
+  * new Google key
+
+ -- Russell Coker <russell@coker.com.au>  Sun, 03 Jul 2022 23:30:16 +1000
+
+etbe-desktop (0.3.1) bookworm; urgency=medium
 
   * Depend on plasma-workspace-wayland and qt5-image-formats-plugins (webp)
 
  -- Russell Coker <russell@coker.com.au>  Fri, 08 Apr 2022 13:54:12 +1000
 
-etbe-desktop (0.3.0) trixie; urgency=medium
+etbe-desktop (0.3.0) bookworm; urgency=medium
 
   * Don't depend on kdepim-addons
   * Depend on gdm3|sddm
