@@ -1,3 +1,9 @@
+etbe-desktop (0.4.2) bookworm; urgency=medium
+
+  * Fix location of key files in previous package
+
+ -- Russell Coker <russell@coker.com.au>  Sat, 09 Sep 2023 23:35:47 +1000
+
 etbe-desktop (0.4.1) bookworm; urgency=medium
 
   * Use debian/install instead of makefile
