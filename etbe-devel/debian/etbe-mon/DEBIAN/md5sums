@@ -1,0 +1,7 @@
+e3aba74784e61a7f45134a94abef3970  usr/lib/mon/mon.d/etbemyzones.monitor
+4d706968e72acb6ae8f8d758fb51bc40  usr/lib/mon/mon.d/etbemyzonesprimary.monitor
+818b856da91d16fdf96a4c42c889e928  usr/sbin/etbe-mon-upgrade-xmpp
+9cbc323d8e4f382bba810296c2be38eb  usr/sbin/mon-shared-status
+df7cececc296c94e4b3f85f6f10b50ca  usr/share/doc/etbe-mon/README.Debian
+2dd66a1e05ba9e41ec168922d5de011d  usr/share/doc/etbe-mon/changelog.gz
+541b91e33dfd9a7d4e5245cec4722367  usr/share/doc/etbe-mon/copyright

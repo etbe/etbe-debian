@@ -1,0 +1,11 @@
+Source: etbe-devel
+Section: admin
+Priority: optional
+Maintainer: Russell Coker <russell@coker.com.au>
+Build-Depends: debhelper (>= 13)
+Standards-Version: 3.9.8
+
+Package: etbe-devel
+Architecture: all
+Depends: etbe-base, build-essential
+Description: Basic dependencies for etbe compiling

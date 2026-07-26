@@ -1,0 +1,11 @@
+#!/bin/bash
+set -e
+
+BUILDDIR=$(realpath $(pwd)/..)
+
+if [ "$UNSTABLE" != "" ]; then
+  BASE=/chroot/unstable
+else
+  BASE=
+fi
+time bwrap --bind /tmp /tmp --bind $BUILDDIR $BUILDDIR --ro-bind /etc /etc --ro-bind $BASE/usr /usr --ro-bind $BASE/var/lib/dpkg /var/lib/dpkg --symlink usr/bin /bin --symlink usr/sbin /sbin --symlink usr/lib64 /lib64 --symlink usr/lib /lib --proc /proc --dev /dev --die-with-parent --unshare-user --unshare-ipc --unshare-net --unshare-pid --new-session --uid 0 --gid 0 "$@"

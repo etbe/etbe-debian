@@ -1,0 +1,9 @@
+Package: etbe-mon
+Version: 0.2.8
+Architecture: all
+Maintainer: Russell Coker <russell@coker.com.au>
+Installed-Size: 19
+Depends: mon (>= 1.3.2), libfilesys-df-perl, swaks, go-sendxmpp, libcgi-pm-perl, bc, libproc-processtable-perl, libnet-dns-perl, libmail-imapclient-perl, libtimedate-perl, libbsd-resource-perl, libsys-filesystem-perl, libhash-case-perl
+Section: admin
+Priority: optional
+Description: Basic dependencies for etbe mon and some scripts
