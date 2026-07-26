@@ -1,0 +1,19 @@
+#!/bin/bash
+
+if [ ! -f /sys/kernel/debug/zswap/stored_pages ]; then
+  echo "ZSwap not enabled"
+  exit 0
+fi
+PAGES=$(</sys/kernel/debug/zswap/stored_pages)
+PAGESIZE=$(getconf PAGESIZE)
+RAM=$(echo "$PAGESIZE * " $(getconf _PHYS_PAGES) | bc)
+POOL=$(</sys/kernel/debug/zswap/pool_total_size)
+if [ "$POOL" == "0" ]; then
+  echo "ZSwap not used yet"
+  exit 0
+fi
+COMP=$(</sys/module/zswap/parameters/compressor)
+echo -n "$COMP compression ratio: "
+echo "scale=2; $PAGES * $PAGESIZE / $POOL" | bc
+echo -n "RAM%: "
+echo "100 * $POOL / $RAM" | bc
