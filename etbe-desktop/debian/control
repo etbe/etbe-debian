@@ -7,5 +7,5 @@ Standards-Version: 3.9.8
 
 Package: etbe-desktop
 Architecture: all
-Depends: sddm, konsole, kmail, plasma-desktop, plasma-workspace, gwenview, dolphin, kdepim-addons, kwin-x11, systemsettings, mpv, kde-standard, kwin-x11, qml-module-org-kde-newstuff
+Depends: gdm3|sddm, konsole, kmail, plasma-desktop, plasma-workspace, gwenview, dolphin, kwin-x11, systemsettings, mpv, kde-standard, kwin-x11, qml-module-org-kde-newstuff
 Description: Basic dependencies for etbe desktop
