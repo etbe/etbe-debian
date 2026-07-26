@@ -1,3 +1,9 @@
+etbe-laptop (0.6) trixie; urgency=medium
+
+  * Depend on dhcpcd
+
+ -- Russell Coker <russell@coker.com.au>  Tue, 20 May 2025 21:47:04 +1000
+
 etbe-laptop (0.5) trixie; urgency=medium
 
   * Remove dependency on kde-config-mobile-networking
