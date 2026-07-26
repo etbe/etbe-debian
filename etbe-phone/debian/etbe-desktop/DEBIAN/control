@@ -1,0 +1,9 @@
+Package: etbe-desktop
+Version: 0.3.2
+Architecture: all
+Maintainer: Russell Coker <russell@coker.com.au>
+Installed-Size: 30
+Depends: gdm3 | sddm, konsole, kmail, plasma-desktop, plasma-workspace, plasma-workspace-wayland, gwenview, dolphin, kwin-x11, systemsettings, mpv, kde-standard, qml-module-org-kde-newstuff, qt5-image-formats-plugins
+Section: admin
+Priority: optional
+Description: Basic dependencies for etbe desktop
