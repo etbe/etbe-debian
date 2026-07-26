@@ -9,4 +9,5 @@ Package: etbe-hardware
 Architecture: all
 Depends: etbe-base, ethtool
 Recommends: smartmontools
+Suggests: boinc-client-opencl
 Description: Package dependencies for hardware (non-VM)

@@ -109,7 +109,7 @@ $cpus_line =~ s/..max_ncpus_pct.$//;
 $cpus_line =~ s/^.*max_ncpus_pct.//;
 if($cpus_line == $percent)
 {
-  syslog("info", "Already set to $percent");
+  syslog("info", "Temp $cur_temp" . "C, already set to $percent");
   exit 0;
 }
 open(OUT, ">$prefs.new") or die "Can't read $prefs.new";
@@ -127,4 +127,4 @@ for($i = 0; $i <= $#prefs_contents; $i++)
 close(OUT);
 rename "$prefs.new", "$prefs" or die "can't rename";
 system("boinccmd --read_global_prefs_override");
-syslog("info", "set percentage to $percent");
+syslog("info", "Temp $cur_temp" . "C, set percentage to $percent");
