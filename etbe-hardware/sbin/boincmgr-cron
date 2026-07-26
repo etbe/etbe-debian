@@ -1,0 +1,130 @@
+#!/usr/bin/perl
+use strict;
+use Sys::Syslog;
+
+
+# Laverton
+# http://www.bom.gov.au/products/IDV60901/IDV60901.94865.shtml
+# Essendon Airport
+# http://www.bom.gov.au/products/IDV60901/IDV60901.94866.shtml
+
+#my $URL = "http://www.bom.gov.au/products/IDV60901/IDV60901.94866.shtml";
+my $URL = $ARGV[0];
+system("wget -o wget.log -O bom.html $URL");
+
+open(IN, "<bom.html") or die "Can't open file bom.html";
+while(<IN>)
+{
+  if($_ =~ /tr class=.rowleftcolumn/)
+  {
+    last;
+  }
+}
+
+sub get_data
+{
+  if(not $_[0] =~ /headers=.t1-$_[1]/)
+  {
+    return undef;
+  }
+  $_[0] =~ s/^.*headers=.t1-$_[1]..//;
+  $_[0] =~ s/<.td.*$//;
+  return $_[0];
+}
+
+my @datetime;
+my $cur_temp -100;
+
+while(<IN>)
+{
+  chomp;
+  if($_ =~ /^<.tr>$/)
+  {
+    last;
+  }
+  my $res;
+  if($res = get_data($_, "datetime"))
+  {
+    @datetime = split(/\//, $res)
+  }
+  elsif($res = get_data($_, "tmp"))
+  {
+    $cur_temp = $res;
+  }
+}
+close(IN);
+if($#datetime == -1 or $cur_temp == -100)
+{
+  die "Can't parse BOM data";
+}
+
+my ($sec,$min,$hour,$mday,$mon,$year,$wday,$yday,$isdst) = localtime();
+
+if($datetime[0] != $mday)
+{
+  die "Date wrong\n";
+}
+
+my $mins;
+my @timearr = split(/:/, $datetime[1]);
+$mins = $timearr[0] * 60 + $timearr [1];
+if($timearr[1] =~ /pm/)
+{
+  $mins += 720;
+}
+
+if($mins + 60 < $hour * 60 + $min)
+{
+  die "page outdated\n";
+}
+
+my %temp_hash;
+foreach ( @ARGV[1..$#ARGV] )
+{
+  my @tmparr = split(/:/, $_);
+  $temp_hash{$tmparr[0]} = $tmparr[1];
+}
+my @temp_list = sort(keys(%temp_hash));
+my $percent = 0;
+my $i;
+for($i = $#temp_list; $i >= 0 and $temp_list[$i] > $cur_temp; $i--)
+{
+  $percent = $temp_hash{$temp_list[$i]}
+}
+
+my $prefs = "/etc/boinc-client/global_prefs_override.xml";
+open(IN, "<$prefs") or die "Can't read $prefs";
+my @prefs_contents;
+while(<IN>)
+{
+  push(@prefs_contents, $_);
+}
+close(IN);
+
+openlog("boincmgr-cron", "", "daemon");
+
+my @cpus_pct = grep(/max_ncpus_pct/, @prefs_contents);
+my $cpus_line = $cpus_pct[0];
+$cpus_line =~ s/..max_ncpus_pct.$//;
+$cpus_line =~ s/^.*max_ncpus_pct.//;
+if($cpus_line == $percent)
+{
+  syslog("info", "Already set to $percent");
+  exit 0;
+}
+open(OUT, ">$prefs.new") or die "Can't read $prefs.new";
+for($i = 0; $i <= $#prefs_contents; $i++)
+{
+  if($prefs_contents[$i] =~ /max_ncpus_pct/)
+  {
+    print OUT "   <max_ncpus_pct>$percent.000000</max_ncpus_pct>\n";
+  }
+  else
+  {
+    print OUT $prefs_contents[$i];
+  }
+}
+close(OUT);
+rename "$prefs.new", "$prefs" or die "can't rename";
+system("boinccmd --read_global_prefs_override");
+syslog("info", "set percentage to $percent");

@@ -1,0 +1,12 @@
+Source: etbe-hardware
+Section: admin
+Priority: optional
+Maintainer: Russell Coker <russell@coker.com.au>
+Build-Depends: debhelper (>= 12)
+Standards-Version: 3.9.8
+
+Package: etbe-hardware
+Architecture: all
+Depends: etbe-base, ethtool
+Recommends: smartmontools
+Description: Package dependencies for hardware (non-VM)
