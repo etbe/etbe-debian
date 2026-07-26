@@ -1,3 +1,9 @@
+etbe-desktop (0.4.7) bookworm; urgency=medium
+
+  * Added new key for chrome apt
+
+ -- Russell Coker <russell@coker.com.au>  Wed, 07 Feb 2024 21:32:35 +1100
+
 etbe-desktop (0.4.6) bookworm; urgency=medium
 
   * Added /etc/sysctl.d/etbe-desktop.conf to allow users to run dmesg
