@@ -1,4 +1,4 @@
 #!/bin/sh
 for n in "$@" ; do
-  mpv --hwdec=auto -af scaletempo -geometry 50%:50% -x 3 -y 3 "$n"
+  mpv --hwdec=auto --geometry=50%:50% --window-scale=3 "$n"
 done
