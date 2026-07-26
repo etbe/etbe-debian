@@ -1,0 +1,11 @@
+Source: etbe-desktop
+Section: admin
+Priority: optional
+Maintainer: Russell Coker <russell@coker.com.au>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.8
+
+Package: etbe-desktop
+Architecture: all
+Depends: sddm, konsole, kmail, plasma-desktop, plasma-workspace, gwenview, dolphin, kdepim-addons, kwin-x11, systemsettings
+Description: Basic dependencies for etbe desktop
