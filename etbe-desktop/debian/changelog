@@ -1,3 +1,11 @@
+etbe-desktop (0.1-2) bullseye; urgency=medium
+
+  * Add mplayer to dependencies
+  * Add kde-standard and kwin-x11 to dependencies
+  * Add qml-module-org-kde-newstuff for systemsettings5
+
+ -- Russell Coker <russell@coker.com.au>  Fri, 04 Dec 2020 00:14:11 +1100
+
 etbe-desktop (0.1-1) unstable; urgency=medium
 
   * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
