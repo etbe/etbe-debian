@@ -1,0 +1,13 @@
+#!/bin/bash
+
+CONF=$1
+
+DOMAINS="$(grep zone $CONF|sed -e s/^zone..// -e s/\"\ .$//|grep -v ^//|grep -v ^virtual$ | grep -v ^dyn | grep -v arpa$ | grep -v abbotsfordhondape.com.au)"
+REV6="$(grep zone.*ip6.arpa $CONF|sed -e s/^zone..// -e s/\"\ .$//|grep -v ^//)"
+
+set -e
+
+QUERYDOMAINS=$(for n in $DOMAINS; do echo -query www.$n ; done)
+QUERYREV6="$(for n in $REV6 ; do echo -query 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.$n:PTR ; done)"
+
+exec /usr/lib/mon/mon.d/dns.monitor -retry 3 -caching_only $QUERYDOMAINS $QUERYREV6 $2

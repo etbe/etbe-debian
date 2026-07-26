@@ -1,0 +1,5 @@
+etbe-mon (0.1-1) unstable; urgency=medium
+
+  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+
+ -- Russell Coker <russell@coker.com.au>  Fri, 23 Jun 2017 00:38:09 +1000

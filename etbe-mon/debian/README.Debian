@@ -1,0 +1,11 @@
+Depends on:
+
+mon
+libcgi-pm-perl for monshow
+libfilesys-diskspace-perl for freespace.monitor
+swaks for smtpswaks.monitor
+lm-sensors for linux-temp.monitor
+sendxmpp for mailxmpp.alert
+bc for sslcert.monitor
+libproc-processtable-perl for ps.monitor
+libnet-dns-perl for dns-query.monitor and dns.monitor
