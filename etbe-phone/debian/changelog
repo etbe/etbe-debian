@@ -1,4 +1,11 @@
-etbe-phone (0.2) UNRELEASED; urgency=medium
+etbe-phone (0.3) unstable; urgency=medium
+
+  * Remove dependency on plasma-workspace-wayland
+  * Remove dependency on kde-config-mobile-networking
+
+ -- Russell Coker <russell@coker.com.au>  Thu, 09 Jan 2025 17:43:08 +1100
+
+etbe-phone (0.2) unstable; urgency=medium
 
   * Depend on etbe-base kwalletmanager waypipe
 
