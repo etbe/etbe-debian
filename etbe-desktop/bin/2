@@ -1,0 +1,4 @@
+#!/bin/sh
+for n in "$@" ; do
+  mpv --hwdec=auto -af scaletempo -geometry 50%:50% -x 2 -y 2 "$n"
+done
