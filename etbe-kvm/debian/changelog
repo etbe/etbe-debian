@@ -1,5 +1,11 @@
+etbe-kvm (0.1-2) unstable; urgency=medium
+
+  * Run kvm as non-root
+
+ -- Russell Coker <russell@coker.com.au>  Sun, 02 Sep 2018 20:58:00 +1000
+
 etbe-kvm (0.1-1) unstable; urgency=medium
 
-  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+  * Initial release
 
  -- Russell Coker <russell@coker.com.au>  Thu, 22 Jun 2017 22:09:40 +1000

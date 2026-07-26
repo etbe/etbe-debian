@@ -2,9 +2,7 @@
 
 set -e
 
-cd /usr/local/sbin
-
-for N in $(ls -1 kvm-*| sort -r) ; do
+for N in $(ls -1 /usr/local/sbin/kvm-*| sort -r) ; do
   start-a-kvm $N
   echo $N
   sleep 10

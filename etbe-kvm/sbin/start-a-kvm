@@ -1,3 +1,4 @@
 #!/bin/bash
-exec screen -S $(echo $1 | sed -e s/kvm.//) -d -m $1
+# the sleep 1 shouldn't be needed, but screen aborts otherwise
+exec ssh -t kvm@localhost "screen -S $(echo $1 | sed -e s/^.*kvm.//) -d -m $1 ; sleep 1"
 
