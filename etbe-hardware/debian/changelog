@@ -1,3 +1,9 @@
+etbe-hardware (0.2.3) trixie; urgency=medium
+
+  * Depend on lsscsi, pwgen
+
+ -- Russell Coker <russell@coker.com.au>  Mon, 11 Aug 2025 14:38:13 +1000
+
 etbe-hardware (0.2.2) bullseye; urgency=medium
 
   * Make boincmgr-cron use curl instead of wget because BOM has blacklisted wget
