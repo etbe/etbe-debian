@@ -1,3 +1,9 @@
+etbe-phone (0.2) UNRELEASED; urgency=medium
+
+  * Depend on etbe-base kwalletmanager waypipe
+
+ -- Russell Coker <russell@coker.com.au>  Sat, 23 Nov 2024 13:05:51 +1100
+
 etbe-phone (0.1) unstable; urgency=medium
 
   * Initial release
