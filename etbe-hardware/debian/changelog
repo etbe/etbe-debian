@@ -1,3 +1,9 @@
+etbe-hardware (0.1-2) unstable; urgency=medium
+
+  * Fixed directory mistake
+
+ -- Russell Coker <russell@coker.com.au>  Fri, 01 Jan 2021 20:02:20 +1100
+
 etbe-hardware (0.1-1) unstable; urgency=medium
 
   * Initial release
