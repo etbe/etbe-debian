@@ -1,3 +1,10 @@
+etbe-base (0.3.8) bookworm; urgency=medium
+
+  * Depend on bubblewrap and add alias for reportbug
+  * Use debian/install instead of Makefile
+
+ -- Russell Coker <russell@coker.com.au>  Sat, 26 Aug 2023 22:01:23 +1000
+
 etbe-base (0.3.7) bookworm; urgency=medium
 
   * Depend on debsums
