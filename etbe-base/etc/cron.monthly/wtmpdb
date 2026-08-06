@@ -1,1 +1,6 @@
-/usr/share/doc/wtmpdb/examples/wtmpdb.cron.monthly
+#!/bin/sh
+
+[ ! -d /run/systemd/system ] || exit 0
+[ -x /usr/bin/wtmpdb ] || exit 0
+
+exec /usr/bin/wtmpdb rotate > /dev/null
