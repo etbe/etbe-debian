@@ -1,3 +1,9 @@
+etbe-base (0.14) trixie; urgency=medium
+
+  * Rotate wtmpdb files
+
+ -- Russell Coker <russell@coker.com.au>  Thu, 06 Aug 2026 22:33:27 +1000
+
 etbe-base (0.13) trixie; urgency=medium
 
   * Stop rsa keys and remove chacha20-poly1305@openssh.com cipher
