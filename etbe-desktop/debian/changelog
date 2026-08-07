@@ -1,3 +1,12 @@
+etbe-desktop (0.6.6) forky; urgency=medium
+
+  * Depend on yt-dlp and nodejs for it
+  * Add yt-dlp-chrome script to run yt-dlp with chrome cookies for age
+  * Depend on sddm not gdm3
+  * Depend on rtkit
+
+ -- Russell Coker <russell@coker.com.au>  Thu, 06 Aug 2026 23:41:50 +1000
+
 etbe-desktop (0.6.5) forky; urgency=medium
 
   * Depend on i2c-tools
