@@ -1,3 +1,11 @@
+etbe-base (0.15) trixie; urgency=medium
+
+  * Add root to sshusers group
+  * Fixed the double-postinst mixup
+  * Made postinst not abort if there are no non-root users
+
+ -- Russell Coker <russell@coker.com.au>  Mon, 10 Aug 2026 13:24:20 +1000
+
 etbe-base (0.14) trixie; urgency=medium
 
   * Rotate wtmpdb files

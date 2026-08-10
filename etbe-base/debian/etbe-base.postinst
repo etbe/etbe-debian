@@ -2,9 +2,22 @@
 set -e
 
 for FILE in /root/.bashrc /etc/skel/.bashrc /home/*/.bashrc ; do
-  if ! grep -q bash.etbe $FILE ; then
-    echo 'for FILE in /etc/bash.etbe/*.sh ; do' >> $FILE
-    echo '  source $FILE' >> $FILE
-    echo 'done' >> $FILE
+  if [ -f $FILE ]; then
+    if ! grep -q bash.etbe $FILE ; then
+      echo 'for FILE in /etc/bash.etbe/*.sh ; do' >> $FILE
+      echo '  source $FILE' >> $FILE
+      echo 'done' >> $FILE
+    fi
   fi
 done
+
+grep -q ^sshusers: /etc/group || groupadd -r sshusers
+groups root |grep -q sshusers || groupmod -a -U root sshusers
+
+if [ "$1" = "configure" ] && dpkg --compare-versions "$2" lt 0.13; then
+  /usr/bin/systemctl restart sshd.service
+fi
+
+if [ "$1" = "configure" ] && dpkg --compare-versions "$2" lt 0.3.10; then
+  /usr/sbin/etbe-base-fix-unattended-upgrades
+fi
