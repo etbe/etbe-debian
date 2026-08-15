@@ -1,3 +1,9 @@
+etbe-hardware (0.2.7) trixie; urgency=medium
+
+  * Added fbset and pciutils to depends
+
+ -- Russell Coker <russell@coker.com.au>  Sat, 15 Aug 2026 17:38:21 +1000
+
 etbe-hardware (0.2.6) trixie; urgency=medium
 
   * Conflicts with Plymouth
