@@ -10,6 +10,6 @@
   "ZZExtensionInstallBlocklist": [ "*" ],
   "ExtensionInstallAllowlistComment": [ "cdfdkmklcjlnnnlnplffpdiekfhkpbme High Contrast Colorful google theme", "ghbmnnjooekpmoecnnnilnnbdlolhkhi is google docs offline" ],
   "ExtensionInstallAllowlist": [ "cdfdkmklcjlnnnlnplffpdiekfhkpbme", "ghbmnnjooekpmoecnnnilnnbdlolhkhi" ],
-  "ExtensionInstallForcelistComment": [ "cjpalhdlnbpafiamejdnhcphjbkeiagm is ublock origin", "edacconmaakjimmfgnblocblbcdcpbko is session buddy" ],
-  "ExtensionInstallForcelist": [ "cjpalhdlnbpafiamejdnhcphjbkeiagm", "edacconmaakjimmfgnblocblbcdcpbko" ]
+  "ExtensionInstallForcelistComment": [ "ddkjiahejlhfcafbddmgiahcphecmpfh is ublock origin lite", "edacconmaakjimmfgnblocblbcdcpbko is session buddy" ],
+  "ExtensionInstallForcelist": [ "ddkjiahejlhfcafbddmgiahcphecmpfh", "edacconmaakjimmfgnblocblbcdcpbko" ]
 }

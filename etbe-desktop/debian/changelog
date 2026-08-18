@@ -1,3 +1,9 @@
+etbe-desktop (0.6.7) forky; urgency=medium
+
+  * Change Chrome to ublock origin lite
+
+ -- Russell Coker <russell@coker.com.au>  Fri, 07 Aug 2026 15:41:12 +1000
+
 etbe-desktop (0.6.6) forky; urgency=medium
 
   * Depend on yt-dlp and nodejs for it
