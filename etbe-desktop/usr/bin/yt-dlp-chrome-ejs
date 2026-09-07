@@ -1,0 +1,2 @@
+#!/bin/bash
+exec yt-dlp --cookies-from-browser chrome --js-runtimes node --remote-components ejs:github "$@"
