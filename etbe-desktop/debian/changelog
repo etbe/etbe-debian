@@ -1,3 +1,11 @@
+etbe-desktop (0.6.8) forky; urgency=medium
+
+  * Make en the default subtitle language
+  * Make yt-dlp-chrome take parameters and added yt-dlp-chrome-ejs
+  * Depend on pipewire-pulse and wireplumber
+
+ -- Russell Coker <russell@coker.com.au>  Mon, 07 Sep 2026 16:53:58 +1000
+
 etbe-desktop (0.6.7) forky; urgency=medium
 
   * Change Chrome to ublock origin lite

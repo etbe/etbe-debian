@@ -1,2 +1,2 @@
 #!/bin/bash
-exec yt-dlp --cookies-from-browser chrome --js-runtimes node "$1"
+exec yt-dlp --cookies-from-browser chrome --js-runtimes node "$@"
