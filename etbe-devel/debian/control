@@ -2,7 +2,7 @@ Source: etbe-devel
 Section: admin
 Priority: optional
 Maintainer: Russell Coker <russell@coker.com.au>
-Build-Depends: debhelper-compat (= 13)
+Build-Depends: debhelper-compat (= 14)
 Standards-Version: 3.9.8
 
 Package: etbe-devel

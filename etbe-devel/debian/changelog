@@ -1,3 +1,10 @@
+etbe-devel (0.5.1) trixie; urgency=medium
+
+  * debhelper-compat version 14
+  * Added key for github apt
+
+ -- Russell Coker <russell@coker.com.au>  Fri, 25 Sep 2026 16:33:59 +1000
+
 etbe-devel (0.5) trixie; urgency=medium
 
   * Add extra checks on wrap-build

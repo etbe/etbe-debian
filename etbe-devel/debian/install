@@ -1,2 +1,3 @@
 etc/bash.etbe/devel.sh
 usr/bin/*
+usr/share/keyrings/*
