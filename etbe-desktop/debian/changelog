@@ -1,3 +1,9 @@
+etbe-desktop (0.6.9) forky; urgency=medium
+
+  * Depend on fbreader
+
+ -- Russell Coker <russell@coker.com.au>  Fri, 25 Sep 2026 16:28:33 +1000
+
 etbe-desktop (0.6.8) forky; urgency=medium
 
   * Make en the default subtitle language
