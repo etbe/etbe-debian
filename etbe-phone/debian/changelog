@@ -1,3 +1,10 @@
+etbe-phone (0.6) forky; urgency=medium
+
+  * depend on fbreader
+  * dh compatibility level 14
+
+ -- Russell Coker <russell@coker.com.au>  Wed, 02 Sep 2026 13:58:27 +1000
+
 etbe-phone (0.5) trixie; urgency=medium
 
   * depend on libnotify-bin

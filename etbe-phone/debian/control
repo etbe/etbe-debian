@@ -2,10 +2,10 @@ Source: etbe-phone
 Section: admin
 Priority: optional
 Maintainer: Russell Coker <russell@coker.com.au>
-Build-Depends: debhelper-compat (= 13)
+Build-Depends: debhelper-compat (= 14)
 Standards-Version: 3.9.8
 
 Package: etbe-phone
 Architecture: all
-Depends: etbe-base, wpasupplicant, wireless-tools, network-manager, plasma-mobile-phone, nheko, lollypop, kwalletmanager, waypipe, geary, wike, libnotify-bin
+Depends: etbe-base, wpasupplicant, wireless-tools, network-manager, plasma-mobile-phone, nheko, lollypop, kwalletmanager, waypipe, geary, wike, libnotify-bin, fbreader
 Description: Basic dependencies for etbe phone
